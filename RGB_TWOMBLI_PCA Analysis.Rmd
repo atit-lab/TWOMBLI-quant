@@ -28,10 +28,14 @@ library(ggbiplot)
 IMPORTING THE DATA
 Not very intensive, importing the data and then separating it into its two groups
 
+```{r filename}
+filename <- "/Users/studentaccount/Documents/Sakin_exp/RGB Trichrome/RGB_all (2)/TWOMBLI_Results_img.csv"
+```
+
 ```{r Importing the Data}
 
 # imports the main dataset containing p42 ctrl, 21d wnt act, 21d wnt act dpp4-/-, p63 ctrl, and 21d reversal mice
-rgb <- read.csv(file="/Users/studentaccount/Documents/Sakin_exp/RGB Trichrome/RGB_all (2)/TWOMBLI_Results_img.csv", header=TRUE, sep=",")
+rgb <- read.csv(file=filename, header=TRUE, sep=",")
 
 # data is then split into 2 groups, 'onset+dpp4 rescue' and 'reversal'
 rgb_resc <- rgb[ rgb$Treatment=="p42 ctrl" | rgb$Treatment=="21d Wnt act" | rgb$Treatment=="21d Wnt act Dpp4-/-", ] # onset+rescue dataset

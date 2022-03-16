@@ -20,6 +20,6 @@ chart.Correlation(rel_vars, histogram = TRUE, method = "pearson")
 rgb_pca <- prcomp(rgb[, c(2:8, 15, 16)], center = TRUE, scale. = TRUE)
 summary(rgb_pca)
 
-ggbiplot(rgb_pca, ellipse = TRUE, groups = sort(rgb$Treatment), var.axes = FALSE) + theme_bw() # nolint
+ggbiplot(rgb_pca, ellipse = TRUE, groups = sort(rgb$Treatment), var.axes = TRUE) + theme_bw() # nolint
 
 #---------- filtering features ----------#

@@ -11,17 +11,3 @@ This macro performs 3 functions:
 1. crops to a 470x470 px frame + saves these images  
 2. deconvolutes image
 3. saves red channel which is used in TWOMBLI
-
-# Proteoglycan-processing
-Rachel Wyetzner and Sakin Kirti, 10/13/2021
-Proteoglycan Quantification for the Atit Lab 
-
-This macro should be used when you have pre-cropped images that exclude hair follicles of RGB Trichrome
-stained skin and want to put them through ImajeJ for quantification of proteoglycan area and ECM area.
-
-This macro can be used with 10x images only. If trying to run other magnification images through, 
-you must change the scale value located in the for loop
-
-This macro performs 2 functions
-1. thresholds area of the ECM
-2. exports results as a csv. file

@@ -13,10 +13,9 @@ This is a short script for the preprocessing of RGB-Trichrome images. This shoul
 This Macro should be used when you have 40x images of RGB trichrome stained skin and want to put them through TWOMBLI for collagen matrix quantification
 
 This macro performs 3 functions:
-
-    crops to a 470x470 px frame + saves these images
-    deconvolutes image
-    saves red channel which is used in TWOMBLI
+- crops to a 470x470 px frame + saves these images
+- deconvolutes image
+- saves red channel which is used in TWOMBLI
 
 ## TWOMBLI PCA
 R markdown file containing code for dimensionality reduction (PCA) for TWOMBLI outputs
